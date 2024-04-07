@@ -1,7 +1,19 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+---
+layout: default
+title: Home
+---
+<hr>
+
+{% for section in site.sections %}
+	<div class="section {{ section.class }}" id="{{ section.id }}">
+		{% if section.long_title %}
+			<h2>{{ section.long_title }}</h2>
+		{% endif %}
+
+		{{ section.content }}
+		{% if section.image %}
+			<img class="interstitial" src="{{ section.image }}">
+		{% endif %}
+	</div>
+	<br>
+{% endfor %}

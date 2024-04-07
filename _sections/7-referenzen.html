@@ -1,0 +1,19 @@
+---
+short_title: Referenzen
+long_title: Referenzen
+image: kaenguru.jpg
+---
+{% assign types = "Figurenspieltherapie, Figurenbaukurse" | split: ", " %}
+{% for t in types %}
+    <p><strong>{{ t }}</strong></p>
+
+    {% assign references = site.references | where:"type",t | reverse %}
+    {% for reference in references %}
+        <blockquote class="reference">
+            <q>{{ reference.content | strip_html | newline_to_br }}</q>
+            <br/><br/>
+            {{ reference.name }}, {{ reference.date | date: "%d.%m.%Y" }}
+        </blockquote>
+        <br/>
+    {% endfor %}
+{% endfor %}
