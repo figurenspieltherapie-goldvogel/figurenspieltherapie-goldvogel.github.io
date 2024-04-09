@@ -1,0 +1,20 @@
+---
+short_title: Aktuelles
+long_title: Aktuelles
+---
+{% assign a = site.aktuelles | reverse %}
+{% for t in a %}
+    <div style="margin:auto; overflow:auto; ">
+        <h3>{{ t.title }}</h3>
+
+        {% if t.pdf %}
+        <a href="{{ t.pdf }}"><img src="pdf.jpg" class="right" width="20%"></a>
+        {% endif %}
+
+        {% if t.image %}
+        <img src="{{ t.image }}" class="right" width="20%">
+        {% endif %}
+        <p>{{ t.content | markdownify }}
+            <br><br>
+    </div>
+{% endfor %}

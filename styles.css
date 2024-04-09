@@ -50,6 +50,11 @@ td {
     color: black;
 }
 
+.section h3 {
+    /* Font */
+    font-size: 150%;
+}
+
 em {
     font-size: 150%;
 }

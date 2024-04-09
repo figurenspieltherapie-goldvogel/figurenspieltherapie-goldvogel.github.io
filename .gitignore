@@ -1,0 +1,6 @@
+# Jekyll generated files
+.jekyll-cache/
+_site/
+
+Gemfile.lock
+
