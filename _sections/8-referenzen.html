@@ -10,7 +10,7 @@ image: kaenguru.jpg
     {% assign references = site.references | where:"type",t | reverse %}
     {% for reference in references %}
         <blockquote class="reference">
-            <q>{{ reference.content | strip_html | newline_to_br }}</q>
+            <q>{{ reference.content | strip_html | rstrip | newline_to_br }}</q>
             <br/><br/>
             {{ reference.name }}, {{ reference.date | date: "%d.%m.%Y" }}
         </blockquote>
