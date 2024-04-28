@@ -166,7 +166,7 @@ a:link[class="navigation"], a:visited[class="navigation"] {
         padding-inline-start: 15px;
     }
 
-    blockquote {
+    blockquote.reference {
         font-size: medium;
     }
 
