@@ -1,6 +1,7 @@
 # Jekyll generated files
 .jekyll-cache/
 _site/
+vendor/
 
 Gemfile.lock
 

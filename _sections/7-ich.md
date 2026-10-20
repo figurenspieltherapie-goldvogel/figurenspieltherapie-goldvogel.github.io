@@ -4,7 +4,8 @@ long_title: Über mich
 ---
 <img src="andrea.jpeg" class="left" width="33%">
 __Andrea Reali-Ehrler__
-- Diplomierte Figurenspieltherapeutin
+- Diplomierte Figurenspieltherapeutin FSF
+- Kunsttherapeutin für Drama- und Sprachtherapie, Methode Figurenspieltherapie
 - Mütter- und Väterberaterin HF
 - Diverse berufsspezifische Weiterbildungen
 - Babymassagekursleiterin
