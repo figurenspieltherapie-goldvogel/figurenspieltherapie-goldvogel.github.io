@@ -48,6 +48,7 @@ td {
     font-size: 250%;
     text-align: center;
     color: black;
+    margin-bottom: 1.75em;
 }
 
 .section h3 {
@@ -67,7 +68,19 @@ blockquote.quote {
 }
 
 blockquote.reference {
-    font-size: larger;
+    font-size: 1rem;
+    margin: 0 0 2.75em;
+}
+
+.press-item {
+    margin-bottom: 3.5em;
+}
+
+.press-item h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.45;
+    margin: 0 0 0.85em;
 }
 
 .reference q {
@@ -106,12 +119,13 @@ img.right {
 }
 
 img.press-preview {
-    width: 38%;
-    max-width: 420px;
+    float: none;
+    display: block;
+    width: 42%;
+    max-width: 460px;
     height: auto;
     border: 1px solid #d0d0d0;
-    margin-left: 1.5em;
-    margin-bottom: 1em;
+    margin: 0;
 }
 
 img.left {

@@ -4,14 +4,14 @@ long_title: Presse
 ---
 {% assign a = site.presse | reverse %}
 {% for t in a %}
-    <div style="margin:auto; overflow:auto; ">
+    <div class="press-item">
+        <h3>{{ t.title }}</h3>
+
         {% if t.pdf %}
         <a href="{{ t.pdf }}">
-            <img src="{% if t.preview %}{{ t.preview }}{% else %}pdf.jpg{% endif %}" class="right press-preview" alt="Vorschau: {{ t.title }}">
+            <img src="{% if t.preview %}{{ t.preview }}{% else %}pdf.jpg{% endif %}" class="press-preview" alt="Vorschau: {{ t.title }}">
         </a>
         {% endif %}
-
-        <h3>{{ t.title }}</h3>
 
         {% if t.image %}
         <img src="{{ t.image }}" class="right" width="20%">
