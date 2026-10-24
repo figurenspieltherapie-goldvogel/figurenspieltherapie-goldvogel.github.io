@@ -105,6 +105,15 @@ img.right {
     margin-bottom: 2em;
 }
 
+img.press-preview {
+    width: 38%;
+    max-width: 420px;
+    height: auto;
+    border: 1px solid #d0d0d0;
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
 img.left {
     float: left;
     margin-right: 4em;
@@ -145,6 +154,15 @@ a:link[class="navigation"], a:visited[class="navigation"] {
     img.left {
         float: right;
         margin-left: 1em;
+        margin-right: auto;
+    }
+
+    img.press-preview {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 420px;
+        margin-left: auto;
         margin-right: auto;
     }
 
